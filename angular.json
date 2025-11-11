@@ -67,7 +67,10 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular/build:extract-i18n"
+          "builder": "@angular/build:extract-i18n",
+           "options": {
+            "buildTarget": "angular-cicd:build"
+          }
         },
         "test": {
           "builder": "@angular/build:karma",
